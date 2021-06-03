@@ -5,7 +5,7 @@ import devices from "../../../styles/devices";
 export const Container = styled.header`
   left: 0;
   padding: 2em;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: ${indexes.nav};

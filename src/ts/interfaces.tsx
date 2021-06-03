@@ -1,5 +1,5 @@
 interface iProps {
-  children?: JSX.Element | JSX.Element[],
+  children?: JSX.Element | JSX.Element[] | string
   [otherProps:string]: any 
 }
 

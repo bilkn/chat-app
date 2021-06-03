@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container,Wrapper, Avatar, Name, About} from "./styles/contact"
+import {Container,Wrapper, Avatar, Name, About,Text,LastMessage} from "./styles/contact"
 import {iProps} from "../../ts/interfaces";
 
 
@@ -17,12 +17,20 @@ Contact.Avatar = function ContactAvatar({children,...rest}:iProps) {
   return <Avatar {...rest}>{children}</Avatar>
 }
 
-Contact.Name = function ContactName({children,...rest}:iProps) {
+Contact.Name = function ContactName({children,...rest}:iProps):JSX.Element {
   return <Name {...rest}>{children}</Name>
 }
 
 Contact.About = function ContactAbout({children,...rest}:iProps) {
   return <About {...rest}>{children}</About>
+}
+
+Contact.Text = function ContactText({children,...rest}:iProps) {
+  return <Text {...rest}>{children}</Text>
+}
+
+Contact.LastMessage = function ContactLastMessage({children,...rest}:iProps) {
+  return <LastMessage {...rest}>{children}</LastMessage>
 }
 
 export default Contact
