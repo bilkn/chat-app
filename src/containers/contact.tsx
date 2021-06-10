@@ -1,5 +1,5 @@
 import React from 'react'
-import { Contact } from '../components'
+import { Avatar, Contact } from '../components'
 
 interface iProps {
   username:string,
@@ -10,7 +10,7 @@ function ContactContainer({username,lastMessage}:iProps) {
   return (
 <Contact>
   <Contact.Wrapper>
-    <Contact.Avatar />
+    <Avatar><Avatar.Picture /> </Avatar>
     <div>
       <Contact.Name>{username || ""}</Contact.Name>
       {lastMessage && <Contact.LastMessage>{lastMessage}</Contact.LastMessage> }   

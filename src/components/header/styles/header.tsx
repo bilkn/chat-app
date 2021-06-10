@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { colors, indexes, sizes } from "../../../styles/variables";
 import devices from "../../../styles/devices";
 
+interface inputProps {
+  [otherProps:string]: any
+}
+
 export const Container = styled.header`
   left: 0;
   padding: 2em;
@@ -30,7 +34,7 @@ export const SearchBox = styled.div`
   position: relative;
 `;
 
-export const Input = styled.input`
+export const Input = styled.input<inputProps>`
   background: ${colors.darkGray};
   border: 1px solid transparent;
   border-radius: 5px;
