@@ -1,11 +1,15 @@
 import styled from "styled-components";
-import {devices,indexes,sizes} from "../../../styles/variables";
+import { colors, indexes, sizes } from "../../../styles/variables";
+import devices from "../../../styles/devices";
+
+interface inputProps {
+  [otherProps:string]: any
+}
 
 export const Container = styled.header`
-  background: #e9ecf5;
   left: 0;
-  padding: 1em;
-  position: fixed;
+  padding: 2em;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: ${indexes.nav};
@@ -30,12 +34,13 @@ export const SearchBox = styled.div`
   position: relative;
 `;
 
-export const Input = styled.input`
+export const Input = styled.input<inputProps>`
+  background: ${colors.darkGray};
   border: 1px solid transparent;
-  border-radius: 20px;
+  border-radius: 5px;
   display: inline-block;
-  padding: 10px;
-  padding-left: 40px;
+  font-size: 1rem;
+  padding: 15px 20px;
   transition-duration: 200ms;
   transition-property: border-color, box-shadow;
   transition-timing-function: ease;
@@ -51,6 +56,9 @@ export const Input = styled.input`
   }
   &:focus + i {
     display: none;
+  }
+  ::placeholder {
+    color:  #c5c5c5;
   }
 `;
 

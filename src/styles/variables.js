@@ -2,6 +2,8 @@ export const colors = {
   weakPassword: '#EC5840',
   mediumPassword: '#F7A61E',
   strongPassword: '#39C16C',
+  darkGray: "#151718",
+  commonBg: "#2a2c32"
 };
 
 export const indexes = {

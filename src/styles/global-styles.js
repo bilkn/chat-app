@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-
+import {colors} from "./variables"
 export const GlobalStyles = createGlobalStyle`
 *, *::before, *::after {
     box-sizing: border-box;
@@ -8,8 +8,8 @@ export const GlobalStyles = createGlobalStyle`
 } 
 html, 
 body {  
-        background: #F3F5FB;
-        color: #333;
+        background: ${colors.commonBg};
+        color: #fff;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 16px;
         -moz-osx-font-smoothing: grayscale;
