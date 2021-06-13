@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container,Wrapper, Name, About,Text,LastMessage} from "./styles/contact"
+import {Container,Wrapper, Name, About,TextWrapper,Text,LastMessage} from "./styles/contact"
 import {iProps} from "../../ts/interfaces";
 
 
@@ -13,12 +13,16 @@ Contact.Wrapper = function ContactWrapper({children,...rest}:iProps) {
   return <Wrapper {...rest}>{children}</Wrapper>
 }
 
-Contact.Name = function ContactName({children,...rest}:iProps):JSX.Element {
+Contact.Name = function ContactName({children,...rest}:iProps){
   return <Name {...rest}>{children}</Name>
 }
 
 Contact.About = function ContactAbout({children,...rest}:iProps) {
   return <About {...rest}>{children}</About>
+}
+
+Contact.TextWrapper = function ContactTextWrapper({children,...rest}:iProps) {
+  return <TextWrapper {...rest}>{children}</TextWrapper>
 }
 
 Contact.Text = function ContactText({children,...rest}:iProps) {

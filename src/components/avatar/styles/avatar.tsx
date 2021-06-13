@@ -10,15 +10,15 @@ interface ButtonProps {
 
 export const Container = styled.div<ContainerProps>`
   background: gray;
-  border-radius: 15px;
+  border-radius: 50%;
   flex-shrink: 0;
   height: ${(props) => props.size + 'px'};
-  margin-right: 2em;
+  margin-right: 1em;
+  overflow: hidden;
   width: ${(props) => props.size + 'px'};
 `;
 
 export const Picture = styled.img`
-  border-radius: inherit;
   display: block;
   height: inherit;
   object-fit: cover;
