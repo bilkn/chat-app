@@ -12,4 +12,6 @@ export const About = styled.p``;
 
 export const LastMessage = styled.p``;
 
+export const TextWrapper = styled.div``;
+
 export const Text = styled.p``;
