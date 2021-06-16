@@ -4,25 +4,25 @@ import girl1 from '../assets/girl.jpg';
 
 interface iProps {
   username: string;
-  lastMessage?: string;
+  lastMessage?: any;
 }
 
-function ContactContainer({ username, lastMessage }: iProps) {
+function ContactContainer({ username = '', lastMessage }: iProps) {
   return (
     <Contact>
       <Contact.Wrapper>
         <Avatar>
           <Avatar.Picture src={girl1} />
         </Avatar>
-        <div>
-          <Contact.Name>{username || ''}</Contact.Name>
+        <Contact.TextWrapper>
+          <Contact.Name>{username}</Contact.Name>
           {lastMessage && (
             <Contact.LastMessage>{lastMessage}</Contact.LastMessage>
           )}
-        </div>
-        <div>
+        </Contact.TextWrapper>
+        <Contact.DateWrapper>
           <Contact.Text>8:15</Contact.Text>
-        </div>
+        </Contact.DateWrapper>
       </Contact.Wrapper>
     </Contact>
   );
