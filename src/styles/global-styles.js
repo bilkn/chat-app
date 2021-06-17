@@ -6,6 +6,12 @@ export const GlobalStyles = createGlobalStyle`
     margin:0;
     padding: 0;
 } 
+
+:root {
+    --gray1: #a1a2a4;
+    --bg-hover-gray: #161819;
+}
+
 html, 
 body {  
         background: ${colors.commonBg};

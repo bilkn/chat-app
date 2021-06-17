@@ -8,6 +8,7 @@ import {
   DateWrapper,
   Text,
   LastMessage,
+  Link
 } from './styles/contact';
 import {iProps} from "../../ts/interfaces";
 
@@ -44,6 +45,10 @@ Contact.Text = function ContactText({children,...rest}:iProps) {
 
 Contact.LastMessage = function ContactLastMessage({children,...rest}:iProps) {
   return <LastMessage {...rest}>{children}</LastMessage>
+}
+
+Contact.Link = function ContactLink({to:string,children,...rest}:iProps) {
+  return <Link to={string} {...rest}>{children}</Link>
 }
 
 export default Contact
