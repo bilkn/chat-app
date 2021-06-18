@@ -10,20 +10,22 @@ interface iProps {
 function ContactContainer({ username = '', lastMessage }: iProps) {
   return (
     <Contact>
-      <Contact.Wrapper>
-        <Avatar>
-          <Avatar.Picture src={girl1} />
-        </Avatar>
-        <Contact.TextWrapper>
-          <Contact.Name>{username}</Contact.Name>
-          {lastMessage && (
-            <Contact.LastMessage>{lastMessage}</Contact.LastMessage>
-          )}
-        </Contact.TextWrapper>
-        <Contact.DateWrapper>
-          <Contact.Text>8:15</Contact.Text>
-        </Contact.DateWrapper>
-      </Contact.Wrapper>
+      <Contact.Link>
+        <Contact.Wrapper>
+          <Avatar>
+            <Avatar.Picture src={girl1} />
+          </Avatar>
+          <Contact.TextWrapper>
+            <Contact.Name>{username}</Contact.Name>
+            {lastMessage && (
+              <Contact.LastMessage>{lastMessage}</Contact.LastMessage>
+            )}
+          </Contact.TextWrapper>
+          <Contact.DateWrapper>
+            <Contact.Text>8:15</Contact.Text>
+          </Contact.DateWrapper>
+        </Contact.Wrapper>
+      </Contact.Link>
     </Contact>
   );
 }
