@@ -12,6 +12,24 @@ export const MessageBox = styled.div`
     variant === "receival" ? colors.blue : colors.gray};
   border-radius: 7px;
   padding: 1em;
+  position: relative;
+
+  &::before {
+    ${({ variant }) =>
+      variant === "receival" ? "right: 100%;" : "left: 100%;"}
+    border-bottom: 7px solid transparent;
+    ${({ variant }) =>
+      variant === "receival"
+        ? `border-right: 7px solid ${colors.blue};`
+        : `border-left: 7px solid ${colors.gray};`}
+    border-top: 7px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 0;
+  }
 `;
 
 export const Wrapper = styled.div`

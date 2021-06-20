@@ -4,7 +4,7 @@ export const colors = {
   strongPassword: '#39C16C',
   darkGray: "#151718",
   commonBg: "#2a2c32",
-  gray: "#34373D",
+  gray: "#494c52",
   blue: "#3D8DE1"
 };
 
