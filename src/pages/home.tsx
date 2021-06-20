@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from '../components';
-import { ContactContainer } from '../containers';
+import { ChatContainer, ContactContainer } from '../containers';
 
 function Home() {
   return (
@@ -14,7 +14,8 @@ function Home() {
         </Header.SearchBox>
       </Header>
       <main>
-        <ContactContainer
+        <ChatContainer />
+        {/* <ContactContainer
           username="Paolo Sabatella"
           lastMessage="Yes I've been loving to lorem ipsum."
         />
@@ -33,7 +34,7 @@ function Home() {
         <ContactContainer
           username="Paolo Sabatella"
           lastMessage="Yes I've been loving to lorem ipsum."
-        />
+        /> */}
       </main>
     </>
   );

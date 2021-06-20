@@ -3,7 +3,9 @@ export const colors = {
   mediumPassword: '#F7A61E',
   strongPassword: '#39C16C',
   darkGray: "#151718",
-  commonBg: "#2a2c32"
+  commonBg: "#2a2c32",
+  gray: "#34373D",
+  blue: "#3D8DE1"
 };
 
 export const indexes = {

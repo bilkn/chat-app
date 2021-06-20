@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Container,
+  Wrapper,
   MessageBox,
   Text,
   TextInput,
@@ -15,6 +16,10 @@ function Chat({ children, ...rest }: iProps) {
 
 Chat.MessageBox = function ChatMessageBox({ children, ...rest }: iProps) {
   return <MessageBox {...rest}>{children}</MessageBox>;
+};
+
+Chat.Wrapper = function ChatWrapper({ children, ...rest }: iProps) {
+  return <Wrapper {...rest}>{children}</Wrapper>;
 };
 
 Chat.Text = function ChatText({ children, ...rest }: iProps) {

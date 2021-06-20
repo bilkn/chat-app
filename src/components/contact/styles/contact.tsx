@@ -17,7 +17,7 @@ export const Link = styled(ButtonLink)`
 
 export const Wrapper = styled.div`
   display: flex;
-  padding: 0.75em 1.5em;
+  padding: var(--padding-sm);
 `;
 
 export const Name = styled.p``;

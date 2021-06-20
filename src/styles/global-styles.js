@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
 :root {
     --gray1: #a1a2a4;
     --bg-hover-gray: #161819;
+    --padding-sm: 0.75em 1.5em;
 }
 
 html, 
