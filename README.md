@@ -1,1 +1,1 @@
-# Chat App - A chat app where you can chat with people.
+# Chat App - A basic React Chat App.
