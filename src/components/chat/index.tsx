@@ -3,7 +3,10 @@ import {
   Container,
   Wrapper,
   MessageBox,
+  Box,
   Text,
+  InnerWrapper,
+  InputWrapper,
   TextInput,
   Date,
   Button,
@@ -22,8 +25,21 @@ Chat.Wrapper = function ChatWrapper({ children, ...rest }: iProps) {
   return <Wrapper {...rest}>{children}</Wrapper>;
 };
 
+Chat.Box = function ChatBox({ children, ...rest }: iProps) {
+  return <Box {...rest}>{children}</Box>;
+};
+
 Chat.Text = function ChatText({ children, ...rest }: iProps) {
   return <Text {...rest}>{children}</Text>;
+};
+
+Chat.InnerWrapper = function ChatInnerWrapper({ children, ...rest }: iProps) {
+  return <InnerWrapper {...rest}>{children}</InnerWrapper>;
+};
+
+
+Chat.InputWrapper = function ChatInputWrapper({ children, ...rest }: iProps) {
+  return <InputWrapper {...rest}>{children}</InputWrapper>;
 };
 
 Chat.TextInput = function ChatTextInput({ ...rest }: iProps) {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from '../components';
-import { ChatContainer, ContactContainer } from '../containers';
+import { ChatContainer, ChatInput, ContactContainer } from '../containers';
+
 
 function Home() {
   return (
@@ -36,6 +37,7 @@ function Home() {
           lastMessage="Yes I've been loving to lorem ipsum."
         /> */}
       </main>
+      <ChatInput />
     </>
   );
 }
