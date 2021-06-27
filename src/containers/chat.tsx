@@ -27,6 +27,22 @@ function ChatContainer() {
           Also, how is the development of the website going - I heard launch was
           December. Any Updates on that? How's Julius?
         </Chat.MessageBox>
+        <Chat.MessageBox receival>
+          Also, how is the development of the website going - I heard launch was
+          December. Any Updates on that? How's Julius?
+        </Chat.MessageBox>
+        <Chat.MessageBox receival>
+          Also, how is the development of the website going - I heard launch was
+          December. Any Updates on that? How's Julius?
+        </Chat.MessageBox>
+        <Chat.MessageBox receival>
+          Also, how is the development of the website going - I heard launch was
+          December. Any Updates on that? How's Julius?
+        </Chat.MessageBox>
+        <Chat.MessageBox receival>
+          Also, how is the development of the website going - I heard launch was
+          December. Any Updates on that? How's Julius?
+        </Chat.MessageBox>
       </Chat.Wrapper>
     </Chat>
   );

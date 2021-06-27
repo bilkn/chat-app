@@ -40,6 +40,7 @@ export const MessageBox = styled.div`
 
 export const Wrapper = styled.div`
   padding: var(--padding-sm);
+  padding-bottom: calc(var(--textbox-height) + 30px);
   & ${MessageBox} + ${MessageBox} {
     margin-top: 1em;
   }
@@ -47,7 +48,7 @@ export const Wrapper = styled.div`
 
 export const InnerWrapper = styled.div`
   align-items: center;
-  background-color: ${colors.darkGray};
+  background-color: ${colors.darkGray};  
   border-radius: 7px;
   display: flex;
   overflow: hidden;
@@ -57,6 +58,7 @@ export const Text = styled.p``;
 
 export const InputWrapper = styled.div`
   background-color: ${colors.blue};
+  box-shadow: 0 0 25px black; 
   bottom: 0;
   left: 0;
   padding: var(--padding-sm);
@@ -71,8 +73,10 @@ export const TextBox = styled.span`
   color: white;
   display: inline-block;
   font-size: 1rem;
+  max-height: 120px;
   max-width: calc(100% - 120px); // 120px is sum of button sizes.
   padding: 0.7em;
+  overflow-y: auto;
   width: 100%;
 
   &:focus {
