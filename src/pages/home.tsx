@@ -1,7 +1,6 @@
-import React from 'react';
-import { Header } from '../components';
-import { ChatContainer, ChatInput, ContactContainer } from '../containers';
-
+import React from "react";
+import { Header } from "../components";
+import { ChatContainer, ChatInput, ContactContainer } from "../containers";
 
 function Home() {
   return (
@@ -15,11 +14,7 @@ function Home() {
         </Header.SearchBox>
       </Header>
       <main>
-        <ChatContainer />
-        {/* <ContactContainer
-          username="Paolo Sabatella"
-          lastMessage="Yes I've been loving to lorem ipsum."
-        />
+        {/*  <ChatContainer /> */}
         <ContactContainer
           username="Paolo Sabatella"
           lastMessage="Yes I've been loving to lorem ipsum."
@@ -35,7 +30,11 @@ function Home() {
         <ContactContainer
           username="Paolo Sabatella"
           lastMessage="Yes I've been loving to lorem ipsum."
-        /> */}
+        />
+        <ContactContainer
+          username="Paolo Sabatella"
+          lastMessage="Yes I've been loving to lorem ipsum."
+        />
       </main>
       <ChatInput />
     </>

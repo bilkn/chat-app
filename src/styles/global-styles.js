@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     --gray1: #a1a2a4;
     --bg-hover-gray: #161819;
     --padding-sm: 0.75em 1.5em;
+    --textbox-height: 65px;
 }
 
 html, 
@@ -25,7 +26,7 @@ body {
     }
    
     #root {
-        min-height: calc(100vh - 72px);
+        min-height: calc(100vh);
         position: relative;
     }
 
