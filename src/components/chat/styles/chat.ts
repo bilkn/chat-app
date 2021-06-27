@@ -63,11 +63,13 @@ export const InputWrapper = styled.div`
   width: 100%;
 `;
 
-export const TextInput = styled.input`
+export const TextBox = styled.span`
   background-color: inherit;
   border: none;
   color: white;
+  display: inline-block;
   font-size: 1rem;
+  max-width: calc(100% - 120px); // 120px is sum of button sizes.
   width: 100%;
 
   &:focus {

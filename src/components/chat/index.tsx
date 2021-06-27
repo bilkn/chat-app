@@ -7,7 +7,7 @@ import {
   Text,
   InnerWrapper,
   InputWrapper,
-  TextInput,
+  TextBox,
   Date,
   Button,
 } from "./styles/chat";
@@ -43,7 +43,7 @@ Chat.InputWrapper = function ChatInputWrapper({ children, ...rest }: iProps) {
 };
 
 Chat.TextInput = function ChatTextInput({ ...rest }: iProps) {
-  return <TextInput {...rest} />;
+  return <TextBox contentEditable {...rest} />;
 };
 
 Chat.Date = function ChatDate({ children, ...rest }: iProps) {
