@@ -10,6 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Box = styled.div`
+  align-self: flex-end;
   display: flex;
 `;
 
@@ -45,6 +46,7 @@ export const Wrapper = styled.div`
 `;
 
 export const InnerWrapper = styled.div`
+  align-items: center;
   background-color: ${colors.darkGray};
   border-radius: 7px;
   display: flex;
@@ -64,12 +66,13 @@ export const InputWrapper = styled.div`
 `;
 
 export const TextBox = styled.span`
-  background-color: inherit;
+  background-color: ${colors.gray};
   border: none;
   color: white;
   display: inline-block;
   font-size: 1rem;
   max-width: calc(100% - 120px); // 120px is sum of button sizes.
+  padding: 0.7em;
   width: 100%;
 
   &:focus {
