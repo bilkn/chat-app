@@ -3,7 +3,7 @@ import { Attachment } from "@styled-icons/material-twotone/Attachment";
 import { PaperPlane } from "@styled-icons/ionicons-sharp/PaperPlane";
 import { EmojiEmotions } from "@styled-icons/material-outlined/EmojiEmotions";
 
-function ChatInput() {
+function ChatInputContainer() {
     return (
         <Chat.InputWrapper>
         <Chat.InnerWrapper>
@@ -31,4 +31,4 @@ function ChatInput() {
     )
 }
 
-export default ChatInput
+export default ChatInputContainer
