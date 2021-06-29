@@ -1,11 +1,43 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
-export const Container = styled.div``
+interface SizeProp {
+  size: number | string;
+}
 
-export const Wrapper = styled.div``
+export const Container = styled.div``;
 
-export const Text = styled.p``
+export const Wrapper = styled.div`
+  display: flex;
+`;
 
-export const Input = styled.input``
+export const AvatarWrapper = styled.div`
+  background: gray;
+  border-radius: 50%;
+  flex-shrink: 0;
+  height: ${({ size }: SizeProp) => size + "px"};
+  margin: auto;
+  overflow: hidden;
+  width: ${({ size }: SizeProp) => size + "px"};
+`;
 
-export const Label = styled.label``
+export const Avatar = styled.img`
+  border-radius: inherit;
+  display: block;
+  height: inherit;
+  object-fit: cover;
+  user-select: none;
+  width: inherit;
+`;
+
+export const Button = styled.button`
+  height: 100%;
+  position: relative;
+  outline: none;
+  width: 100%;
+`;
+
+export const Text = styled.p``;
+
+export const Input = styled.input``;
+
+export const Label = styled.label``;
