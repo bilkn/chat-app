@@ -5,8 +5,10 @@ import {
   AvatarWrapper,
   Avatar,
   Text,
+  IconContainer,
   Input,
   Button,
+  IconText,
   Label,
 } from "./styles/profile";
 
@@ -50,8 +52,16 @@ Profile.Button = function ProfileButton({ children, ...rest }: iProps) {
   return <Button {...rest}>{children}</Button>;
 };
 
+Profile.IconContainer = function ProfileIconContainer({ children, ...rest }: iProps) {
+  return <IconContainer {...rest}>{children}</IconContainer>;
+};
+
 Profile.Input = function ProfileInput({ children, ...rest }: iProps) {
   return <Input {...rest} />;
+};
+
+Profile.IconText = function ProfileIconText({ children, ...rest }: iProps) {
+  return <IconText {...rest}>{children}</IconText>;
 };
 
 Profile.Label = function ProfileLabel({ children, ...rest }: iProps) {
