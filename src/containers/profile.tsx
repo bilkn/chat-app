@@ -2,6 +2,7 @@ import React from "react";
 import { Profile } from "../components";
 import girl from "../assets/girl.jpg";
 import { PhotoCamera } from "@styled-icons/material/PhotoCamera";
+import "styled-components/macro";
 
 function ProfileContainer() {
   return (
@@ -16,6 +17,13 @@ function ProfileContainer() {
             <Profile.Avatar src={girl} />
           </Profile.Button>
         </Profile.AvatarWrapper>
+      </Profile.Wrapper>
+
+      <Profile.Wrapper css="background:white;">
+        <Profile.Fieldset>
+          <Profile.Label>Username</Profile.Label>
+          <Profile.Input value="Enes Bilkan" />
+        </Profile.Fieldset>
       </Profile.Wrapper>
     </Profile>
   );
