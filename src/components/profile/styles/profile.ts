@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import { colors } from "../../../styles/variables";
 
 interface SizeProp {
   size: number | string;
@@ -8,6 +9,7 @@ export const Container = styled.div``;
 
 export const Wrapper = styled.div`
   display: flex;
+  padding: var(--padding-sm);
 `;
 
 export const AvatarWrapper = styled.div`
@@ -64,6 +66,22 @@ export const IconText = styled.p`
 
 export const Text = styled.p``;
 
-export const Input = styled.input``;
+export const Input = styled.input`
+  appearance: none;
+  border: none;
+  background: none;
+  color: black;
+  padding: 0.5em;
+`;
 
-export const Label = styled.label``;
+export const Fieldset = styled.fieldset`
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
+
+export const Label = styled.label`
+  color: orange;
+  padding: 0.5em;
+`;

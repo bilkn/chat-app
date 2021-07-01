@@ -9,6 +9,7 @@ import {
   Input,
   Button,
   IconText,
+  Fieldset,
   Label,
 } from "./styles/profile";
 
@@ -62,6 +63,10 @@ Profile.Input = function ProfileInput({ children, ...rest }: iProps) {
 
 Profile.IconText = function ProfileIconText({ children, ...rest }: iProps) {
   return <IconText {...rest}>{children}</IconText>;
+};
+
+Profile.Fieldset = function ProfileFieldset({ children, ...rest }: iProps) {
+  return <Fieldset {...rest}>{children}</Fieldset>;
 };
 
 Profile.Label = function ProfileLabel({ children, ...rest }: iProps) {
