@@ -36,6 +36,32 @@ export const Button = styled.button`
   width: 100%;
 `;
 
+export const IconContainer = styled.div`
+  align-items: center;
+  background-color: #6b5e5e8a;
+  color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: opacity 200ms;
+  top: 50%;
+  opacity: 0;
+  width: 100%;
+  &:hover {
+    opacity: 1;
+  }
+`;
+
+export const IconText = styled.p`
+  font-size: 0.8rem;
+  margin-top: 0.5em;
+  max-width: 20ch;
+`;
+
 export const Text = styled.p``;
 
 export const Input = styled.input``;
