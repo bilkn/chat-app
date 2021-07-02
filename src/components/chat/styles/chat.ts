@@ -90,4 +90,8 @@ export const Button = styled.button`
   background-color: transparent;
   color: ${colors.white};
   padding: 0.6em;
+  transition: background-color 150ms;
+  &:hover {
+    background-color: #212121;
+  }
 `;
