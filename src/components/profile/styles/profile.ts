@@ -31,11 +31,21 @@ export const Avatar = styled.img`
   width: inherit;
 `;
 
-export const Button = styled.button`
+export const AvatarButton = styled.button`
   height: 100%;
   position: relative;
   outline: none;
   width: 100%;
+`;
+
+export const Button = styled.button`
+  background: transparent;
+  color: ${colors.lightgray};
+  padding: 0.2em;
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+  top: 50%;
 `;
 
 export const IconContainer = styled.div`
@@ -66,6 +76,10 @@ export const IconText = styled.p`
 
 export const Text = styled.p``;
 
+export const InputWrapper = styled.div`
+  position: relative;
+`;
+
 export const Input = styled.input`
   appearance: none;
   color: white;
@@ -73,6 +87,7 @@ export const Input = styled.input`
   background: none;
   font-size: 1rem;
   padding: 0.2em 0.5em;
+  width: 100%;
 `;
 
 export const FieldWrapper = styled.div`

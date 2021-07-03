@@ -6,7 +6,9 @@ import {
   Avatar,
   Text,
   IconContainer,
+  InputWrapper,
   Input,
+  AvatarButton,
   Button,
   IconText,
   FieldWrapper,
@@ -54,8 +56,16 @@ Profile.Button = function ProfileButton({ children, ...rest }: iProps) {
   return <Button {...rest}>{children}</Button>;
 };
 
+Profile.AvatarButton = function ProfileAvatarButton({ children, ...rest }: iProps) {
+  return <AvatarButton {...rest}>{children}</AvatarButton>;
+};
+
 Profile.IconContainer = function ProfileIconContainer({ children, ...rest }: iProps) {
   return <IconContainer {...rest}>{children}</IconContainer>;
+};
+
+Profile.InputWrapper = function ProfileInputWrapper({ children, ...rest }: iProps) {
+  return <InputWrapper {...rest}>{children}</InputWrapper>;
 };
 
 Profile.Input = function ProfileInput({ children, ...rest }: iProps) {
