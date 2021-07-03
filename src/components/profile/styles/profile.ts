@@ -68,20 +68,28 @@ export const Text = styled.p``;
 
 export const Input = styled.input`
   appearance: none;
+  color: white;
   border: none;
   background: none;
-  color: black;
-  padding: 0.5em;
+  font-size: 1rem;
+  padding: 0.2em 0.5em;
+`;
+
+export const FieldWrapper = styled.div`
+  background: ${colors.gray};
+  margin-top: 1em;
+  padding: var(--padding-sm);
 `;
 
 export const Fieldset = styled.fieldset`
   border: none;
+  color: white;
   display: flex;
   flex-direction: column;
   width: 100%;
 `;
 
 export const Label = styled.label`
-  color: orange;
-  padding: 0.5em;
+  color: ${colors.lightblue};
+  padding: 0.2em 0.5em;
 `;

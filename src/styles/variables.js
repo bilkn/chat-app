@@ -6,6 +6,7 @@ export const colors = {
   commonBg: "#2a2c32",
   gray: "#494c52",
   blue: "#3D8DE1",
+  lightblue:"#acccff",
   white: "#E4E3E6"
 };
 

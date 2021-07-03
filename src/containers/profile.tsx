@@ -3,6 +3,7 @@ import { Profile } from "../components";
 import girl from "../assets/girl.jpg";
 import { PhotoCamera } from "@styled-icons/material/PhotoCamera";
 import "styled-components/macro";
+import { colors } from "../styles/variables";
 
 function ProfileContainer() {
   return (
@@ -19,12 +20,22 @@ function ProfileContainer() {
         </Profile.AvatarWrapper>
       </Profile.Wrapper>
 
-      <Profile.Wrapper css="background:white;">
+      <Profile.FieldWrapper
+   
+      >
         <Profile.Fieldset>
           <Profile.Label>Username</Profile.Label>
           <Profile.Input value="Enes Bilkan" />
         </Profile.Fieldset>
-      </Profile.Wrapper>
+      </Profile.FieldWrapper>
+      <Profile.FieldWrapper
+  
+      >
+        <Profile.Fieldset>
+          <Profile.Label>Status</Profile.Label>
+          <Profile.Input value="Available" />
+        </Profile.Fieldset>
+      </Profile.FieldWrapper>
     </Profile>
   );
 }
