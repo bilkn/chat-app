@@ -18,7 +18,7 @@ html,
 body {  
         background: ${colors.commonBg};
         color: #fff;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 16px;
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
