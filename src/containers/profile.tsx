@@ -21,9 +21,9 @@ function ProfileContainer() {
 
       <Profile.FieldWrapper>
         <Profile.Fieldset>
-          <Profile.Label>Username</Profile.Label>
+          <Profile.Label for="username">Username</Profile.Label>
           <Profile.InputWrapper>
-            <Profile.Input value="Enes Bilkan" />
+            <Profile.Input id="username" value="Enes Bilkan" />
             <Profile.Button>
               <Pencil size="22" />
             </Profile.Button>
@@ -32,9 +32,9 @@ function ProfileContainer() {
       </Profile.FieldWrapper>
       <Profile.FieldWrapper>
         <Profile.Fieldset>
-          <Profile.Label>Status</Profile.Label>
+          <Profile.Label for="status">Status</Profile.Label>
           <Profile.InputWrapper>
-            <Profile.Input value="Available" />
+            <Profile.Input id="status" value="Available" />
             <Profile.Button>
               <Pencil size="22" />
             </Profile.Button>

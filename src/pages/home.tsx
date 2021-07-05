@@ -1,23 +1,20 @@
 import React from "react";
-import { Header } from "../components";
-import { ChatContainer, ChatInputContainer, ContactContainer } from "../containers";
-import ProfileContainer from "../containers/profile";
+import {
+  ChatContainer,
+  ChatInputContainer,
+  ContactContainer,
+  ProfileContainer,
+  HeaderContainer
+} from "../containers";
 
 function Home() {
   return (
     <>
-      <Header>
-        {/* <Header.SearchBox>
-          <Header.Input
-            type="search"
-            placeholder="Search for messages or contacts"
-          />
-        </Header.SearchBox> */}
-      </Header>
+      <HeaderContainer /> 
       <main>
-       <ProfileContainer />
+        <ProfileContainer />
         {/*  <ChatContainer /> */}
-      {/*   <ContactContainer
+        {/*   <ContactContainer
           username="Paolo Sabatella"
           lastMessage="Yes I've been loving to lorem ipsum."
         />

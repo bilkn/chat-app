@@ -1,3 +1,5 @@
 export {default as ContactContainer} from "./contact"
 export {default as ChatContainer} from "./chat"
 export {default as ChatInputContainer} from "./chat-input"
+export {default as HeaderContainer} from "./header"
+export {default as ProfileContainer} from "./profile"
