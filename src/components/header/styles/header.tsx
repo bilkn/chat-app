@@ -38,6 +38,7 @@ export const Input = styled.input<inputProps>`
   background: ${colors.darkGray};
   border: 1px solid transparent;
   border-radius: 5px;
+  color: white;
   display: inline-block;
   font-size: 1rem;
   padding: 15px 20px;
