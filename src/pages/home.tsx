@@ -10,9 +10,7 @@ import {
 function Home() {
   return (
     <>
-      <HeaderContainer /> 
       <main>
-        <ProfileContainer />
         {/*  <ChatContainer /> */}
         {/*   <ContactContainer
           username="Paolo Sabatella"
