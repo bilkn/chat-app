@@ -1,1 +1,1 @@
-# Chat App - A basic React Chat App.
+# Chat App - A React Chat App.
